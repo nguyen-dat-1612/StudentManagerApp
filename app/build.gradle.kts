@@ -47,6 +47,9 @@ dependencies {
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)
 
+    //View Model
+    implementation ("androidx.lifecycle:lifecycle-viewmodel-ktx:2.6.2")
+
     // Core Kotlin + Coroutines
     implementation("androidx.core:core-ktx:1.12.0")
     implementation("org.jetbrains.kotlinx:kotlinx-coroutines-android:1.7.3")

@@ -16,7 +16,7 @@ class StudentAdapter(private val onItemClick: (Student) -> Unit) :
 
     inner class StudentViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
         fun bind(student: Student) {
-            itemView.findViewById<TextView>(R.id.studentName)
+            itemView.findViewById<TextView>(R.id.studentName).text = student.name
             itemView.findViewById<TextView>(R.id.studentAge).text = "Tuổi: ${student.age}"
             itemView.findViewById<TextView>(R.id.studentEmail).text = student.email
             itemView.setOnClickListener { onItemClick(student) }
